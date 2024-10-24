@@ -7,20 +7,8 @@
     <title>Writeup: Easy Box 1</title>
     <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        html, body {
-            height: 100%;
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-        main {
-            flex: 1;
-        }
-    </style>
 </head>
-<body class="bg-gray-900 text-white">
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
     <!-- Navbar -->
     <nav class="bg-gray-800 p-4">
         <div class="container mx-auto">
@@ -33,16 +21,74 @@
     </nav>
 
     <!-- Writeup Content -->
-    <main class="container mx-auto p-6">
+    <div class="container mx-auto p-6 flex-grow">
         <h1 class="text-4xl font-bold mb-4">HackTheBox: Easy Box 1 Writeup</h1>
-        <p class="mb-6">This is a detailed walkthrough of the HackTheBox Easy Box 1 challenge...</p>
-        
-        <!-- Your writeup content goes here -->
-    </main>
+        <p class="mb-6">This is a detailed walkthrough of the HackTheBox Easy Box 1 challenge, covering each stage of the penetration testing process.</p>
+
+        <!-- Table of Contents -->
+        <div class="bg-gray-800 p-4 rounded mb-4">
+            <h2 class="text-2xl font-bold mb-4">Table of Contents</h2>
+            <ul class="list-decimal list-inside">
+                <li><a href="#enumeration" class="text-blue-400 hover:underline">Enumeration</a></li>
+                <li><a href="#vulnerabilities" class="text-blue-400 hover:underline">Vulnerabilities Identified</a></li>
+                <li><a href="#exploitation" class="text-blue-400 hover:underline">Exploitation</a></li>
+                <li><a href="#post-exploitation" class="text-blue-400 hover:underline">Post-Exploitation</a></li>
+                <li><a href="#lessons-learned" class="text-blue-400 hover:underline">Lessons Learned</a></li>
+            </ul>
+        </div>
+
+        <!-- Enumeration Section -->
+        <div id="enumeration" class="bg-gray-800 p-4 rounded mb-6">
+            <h2 class="text-3xl font-bold mb-2">Enumeration</h2>
+            <p>In this section, we perform network reconnaissance and service discovery using tools like <strong>nmap</strong>, <strong>netcat</strong>, or others to identify open ports, services, and potential attack vectors.</p>
+            <pre class="bg-gray-700 p-4 rounded text-sm mb-4">nmap -sC -sV -oN nmap_initial.txt 10.10.10.X</pre>
+            <p>Output shows open ports 22 (SSH) and 80 (HTTP). We also found a public web directory that looks interesting.</p>
+        </div>
+
+        <!-- Vulnerabilities Identified -->
+        <div id="vulnerabilities" class="bg-gray-800 p-4 rounded mb-6">
+            <h2 class="text-3xl font-bold mb-2">Vulnerabilities Identified</h2>
+            <p>Based on the services identified, the following vulnerabilities were discovered:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Outdated <strong>Apache HTTP Server</strong> (CVE-XXXX-XXXX)</li>
+                <li>Weak credentials for SSH access</li>
+            </ul>
+        </div>
+
+        <!-- Exploitation Section -->
+        <div id="exploitation" class="bg-gray-800 p-4 rounded mb-6">
+            <h2 class="text-3xl font-bold mb-2">Exploitation</h2>
+            <p>In this section, we detail how the vulnerabilities were exploited to gain initial access to the system.</p>
+            <p>Exploiting the outdated Apache server allowed us to upload a reverse shell:</p>
+            <pre class="bg-gray-700 p-4 rounded text-sm mb-4">nc -lvnp 4444</pre>
+            <p>Next, we used a weak SSH password to gain further access to the machine.</p>
+        </div>
+
+        <!-- Post-Exploitation Section -->
+        <div id="post-exploitation" class="bg-gray-800 p-4 rounded mb-6">
+            <h2 class="text-3xl font-bold mb-2">Post-Exploitation</h2>
+            <p>After gaining access, we performed the following actions:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li>Privilege escalation using a kernel exploit</li>
+                <li>Collected sensitive data such as <strong>/etc/passwd</strong> and system logs</li>
+                <li>Maintained persistence with a hidden SSH key</li>
+            </ul>
+        </div>
+
+        <!-- Lessons Learned -->
+        <div id="lessons-learned" class="bg-gray-800 p-4 rounded mb-6">
+            <h2 class="text-3xl font-bold mb-2">Lessons Learned</h2>
+            <p>This section highlights key takeaways and best practices learned from the engagement:</p>
+            <ul class="list-disc list-inside">
+                <li>Ensure timely updates and patch management to avoid exploitation of known vulnerabilities.</li>
+                <li>Use strong, unique credentials for all accounts to prevent easy brute-force attacks.</li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 p-4 text-center">
-        <p>&copy; 2024 Your Name. <a href="https://github.com/username" class="text-blue-400 hover:underline">GitHub</a></p>
+    <footer class="bg-gray-800 p-4 text-center mt-auto">
+        <p>&copy; 2024 Your Name. <a href="https://github.com/your-github" class="text-blue-400 hover:underline">GitHub</a></p>
     </footer>
 </body>
 </html>
