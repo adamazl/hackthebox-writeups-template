@@ -42,4 +42,4 @@ Follow these steps to deploy your writeups on GitHub Pages:
    - Visit the URL provided by GitHub Pages to see your live site.
 
 ## Example URL
-`https://your-username.github.io/hackthebox-writeups/`
+`https://adamazl.github.io/hackthebox-writeups/`
