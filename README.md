@@ -1,45 +1,65 @@
-# HackTheBox Writeups - GitHub Pages Template
+# HackTheBox Writeups Template
 
-This repository contains a simple template for hosting HackTheBox writeups on GitHub Pages. It uses basic HTML and Tailwind CSS for styling and provides a clean, responsive layout for displaying writeups for ethical hacking challenges. Whether you're documenting your own security labs or sharing them with others, this template offers an easy way to host your writeups online without the need for complex setups.
+This is a template repository for creating a personal site using GitHub Pages, designed for sharing HackTheBox writeups or similar technical content. It provides a clean, minimal design with Tailwind CSS for easy styling.
 
 ## Features
-- Clean and responsive design using Tailwind CSS.
-- Basic HTML structure for easy customization.
-- Ready-to-use navigation bar and footer.
-- Template for individual writeups in regular HTML format.
-  
-## How to Deploy on GitHub Pages
 
-Follow these steps to deploy your writeups on GitHub Pages:
+- **Tailwind CSS** for responsive and modern design
+- Pre-built pages for **Home**, **About**, and **Contact**
+- Simple structure for adding writeups in HTML format
+- Easy to customize and extend
 
-1. **Fork or Clone the Repository**:
-   - Clone this repository or fork it to your own GitHub account using:
-     ```bash
-     git clone https://github.com/adamazl/hackthebox-writeups-template.git
-     ```
+## Installation
 
-2. **Add Your Writeups**:
-   - Add each writeup as an individual HTML file (e.g., `writeup1.html`) in the repository.
-   - Update the `index.html` file to link to your new writeups.
+### 1. Use as a Template
 
-3. **Push Changes to GitHub**:
-   - Once you've added your content, push the changes to your GitHub repository:
-     ```bash
-     git add .
-     git commit -m "Added writeup1"
-     git push origin main
-     ```
+To use this repository as a template, follow these steps:
 
-4. **Enable GitHub Pages**:
-   - Go to your repository on GitHub.
-   - Click on the **Settings** tab.
-   - Scroll down to the **GitHub Pages** section.
-   - Under **Source**, select the `main` branch (or `master` if that's your default) and the `/ (root)` folder.
-   - Click **Save**.
-   - After a few minutes, your site will be live at `https://your-username.github.io/your-repository-name`.
+1. Click the **"Use this template"** button at the top of the repository page.
+2. Name your new repository and set it to public or private.
+3. Clone the new repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
 
-5. **Access Your Site**:
-   - Visit the URL provided by GitHub Pages to see your live site.
+### 2. Git Clone
 
-## Example URL
-`https://adamazl.github.io/hackthebox-writeups/`
+Alternatively, you can clone this repository directly:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/adamazl/hackthebox-writeups-template.git
+   cd hackthebox-writeups-template
+   ```
+   
+2. Modify the template files as needed (e.g., update content, links, and add your writeups).
+
+## Adding Writeups
+
+To add your HackTheBox or other CTF writeups:
+
+1. Create a new HTML file in the root directory (e.g., `writeup1.html`).
+2. Use the existing `writeup1.html` file as a reference to structure your writeups.
+3. Update the `index.html` file with links to your new writeups.
+
+## Deployment
+
+You can easily deploy your site using GitHub Pages:
+
+1. Make sure your repository is public.
+2. Go to the **Settings** tab of your repository.
+3. Scroll down to the **Pages** section under **Code and automation**.
+4. Under **Source**, select the branch you want to use (e.g., `main` or `master`).
+5. Select the folder as `/ (root)` and click **Save**.
+6. After a few minutes, your site will be live at `https://your-username.github.io/your-repo-name/`.
+
+## Customization
+
+- Modify the **meta tags** in `index.html` to change the site title and description.
+- Add your personal information to the **About** and **Contact** pages.
+- Tailwind CSS can be further customized by adding styles or modifying the layout.
+
+## License
+
+This repository is open source and available under the [MIT License](LICENSE).
