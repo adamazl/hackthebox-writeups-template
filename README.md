@@ -15,7 +15,7 @@ Follow these steps to deploy your writeups on GitHub Pages:
 1. **Fork or Clone the Repository**:
    - Clone this repository or fork it to your own GitHub account using:
      ```bash
-     git clone https://github.com/your-username/hackthebox-writeups.git
+     git clone https://github.com/adamazl/hackthebox-writeups-template.git
      ```
 
 2. **Add Your Writeups**:
