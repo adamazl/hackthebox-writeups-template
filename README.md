@@ -19,7 +19,6 @@ Follow these steps to deploy your writeups on GitHub Pages:
      ```
 
 2. **Add Your Writeups**:
-   - Convert your markdown writeups to HTML.
    - Add each writeup as an individual HTML file (e.g., `writeup1.html`) in the repository.
    - Update the `index.html` file to link to your new writeups.
 
