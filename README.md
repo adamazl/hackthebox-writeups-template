@@ -1,65 +1,44 @@
 # HackTheBox Writeups Template
 
-This is a template repository for creating a personal site using GitHub Pages, designed for sharing HackTheBox writeups or similar technical content. It provides a clean, minimal design with Tailwind CSS for easy styling.
+Welcome to the **HackTheBox Writeups Template**! This repository is a customizable template designed for cybersecurity professionals and aspiring penetration testers to document and share their HackTheBox challenge writeups using GitHub Pages.
+
+Check out the example site: [HackTheBox Writeups Example](https://adamazl.github.io/hackthebox-writeups/)
 
 ## Features
 
-- **Tailwind CSS** for responsive and modern design
-- Pre-built pages for **Home**, **About**, and **Contact**
-- Simple structure for adding writeups in HTML format
-- Easy to customize and extend
+- **Tailwind CSS** for a modern and responsive design.
+- Pre-built **Home**, **About**, and **Contact** pages.
+- Ready-to-use writeup template for adding HackTheBox challenges writeups.
+- Easy deployment via GitHub Pages.
 
 ## Installation
 
-### 1. Use as a Template
+You can start using this template in two ways:
 
-To use this repository as a template, follow these steps:
+1. **Copy GitHub Template:**
+   - Click the "Use this template" button on the repository page.
+   - Name your repository and clone it to your local machine.
 
-1. Click the **"Use this template"** button at the top of the repository page.
-2. Name your new repository and set it to public or private.
-3. Clone the new repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   ```
+2. **Git Clone:**
+   - Run the following command to clone the repository:
+     ```bash
+     git clone https://github.com/your-username/hackthebox-writeups-template.git
+     cd hackthebox-writeups-template
+     ```
 
-### 2. Git Clone
+## Deployment on GitHub Pages
 
-Alternatively, you can clone this repository directly:
+To deploy your writeups on GitHub Pages:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/adamazl/hackthebox-writeups-template.git
-   cd hackthebox-writeups-template
-   ```
-   
-2. Modify the template files as needed (e.g., update content, links, and add your writeups).
+1. **Ensure the repository is public**: GitHub Pages only works with public repositories.
+2. **Enable GitHub Pages**:
+   - Go to your repository’s settings.
+   - Scroll down to the "GitHub Pages" section.
+   - In the "Source" dropdown, select `main` or `master` branch.
+   - Your site will be live at `https://<your-username>.github.io/<repository-name>/`.
 
-## Adding Writeups
+## Future Updates
 
-To add your HackTheBox or other CTF writeups:
-
-1. Create a new HTML file in the root directory (e.g., `writeup1.html`).
-2. Use the existing `writeup1.html` file as a reference to structure your writeups.
-3. Update the `index.html` file with links to your new writeups.
-
-## Deployment
-
-You can easily deploy your site using GitHub Pages:
-
-1. Make sure your repository is public.
-2. Go to the **Settings** tab of your repository.
-3. Scroll down to the **Pages** section under **Code and automation**.
-4. Under **Source**, select the branch you want to use (e.g., `main` or `master`).
-5. Select the folder as `/ (root)` and click **Save**.
-6. After a few minutes, your site will be live at `https://your-username.github.io/your-repo-name/`.
-
-## Customization
-
-- Modify the **meta tags** in `index.html` to change the site title and description.
-- Add your personal information to the **About** and **Contact** pages.
-- Tailwind CSS can be further customized by adding styles or modifying the layout.
-
-## License
-
-This repository is open source and available under the [MIT License](LICENSE).
+- **User comments** on each writeup page for community discussions and feedback.
+  
+Stay tuned for more features!
